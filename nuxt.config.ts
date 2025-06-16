@@ -5,6 +5,9 @@ export default defineNuxtConfig({
   css: ['@/assets/styles/main.scss'], 
   icon: {
     mode: 'css',
+    provider: 'server', 
+    size: '24px',
+    class: 'icon',
     cssLayer: 'base',
     customCollections: [
       {
