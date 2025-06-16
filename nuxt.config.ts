@@ -16,10 +16,18 @@ export default defineNuxtConfig({
       },
     ],
   },
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+             additionalData: `@use "@/assets/styles/mixins" as *;`
+        }
+      }
+    }
+  },
   modules: [
     '@nuxt/content',
     '@nuxt/eslint',
-    '@nuxt/fonts',
     '@nuxt/icon',
     '@nuxt/image',
     '@nuxt/scripts',

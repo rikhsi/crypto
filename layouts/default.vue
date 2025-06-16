@@ -16,14 +16,20 @@
 
 <script setup></script>
 
-<style scoped>
+<style scoped lang="scss">
     .layout {
-        display: flex;
-        flex-direction: column;
         min-height: 100svh;
-    }   
 
-    .main {
-        flex: 1;
-    }
+        @include flex-column();
+
+        .header {
+            padding: 20px;
+
+            @include flex-row(unset, center);
+        }
+
+        .main {
+            flex: 1;
+        }
+    }   
 </style>

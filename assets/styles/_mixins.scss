@@ -1,0 +1,24 @@
+@mixin font-style($weight, $size, $lineHeight: 100%) {
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $lineHeight;
+}
+
+@mixin flex-row($align: unset, $justify: unset) {
+    display: flex;
+    flex-direction: row;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin flex-column($align: unset, $justify: unset) {
+    display: flex;
+    flex-direction: column;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin flex-gap($column: 0, $row: 0) {
+    column-gap: $column;
+    row-gap: $row;
+}

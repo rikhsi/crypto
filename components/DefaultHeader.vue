@@ -1,5 +1,5 @@
 <template>
     <div>
-        <Icon name="custom:crypto" />
+        <MainLogo/>
     </div>
 </template>
