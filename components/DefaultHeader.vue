@@ -1,3 +1,5 @@
 <template>
-    <div>1dsfsf</div>
+    <div>
+        <Icon name="custom:crypto" />
+    </div>
 </template>
